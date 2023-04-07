@@ -1,0 +1,658 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+/* General style reset */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  background: #f5f5f5;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+article {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2.5rem;
+  /* scroll-snap-align: start;
+  scroll-snap-stop: always; */
+}
+
+.contact-article {
+  min-height: 50vh;
+}
+
+footer {
+  min-height: 47vh;
+  background-color: #0e0e0e;
+}
+
+/* Mobile-Navbar Styles */
+.navbar-container {
+  right: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  z-index: 999;
+  position: fixed;
+}
+
+.container-buttons {
+  display: flex;
+}
+
+.tg-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+.darkmode-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+.darkmode-img,
+.darkmode-button {
+  width: 32px;
+  height: 32px;
+}
+
+nav div ul {
+  position: fixed;
+  background-color: rgba(41, 57, 62, 1);
+  top: 0;
+  padding-top: 3rem;
+  width: 10rem;
+  height: 100vh;
+  right: -10rem;
+  transition: right 0.5s ease-in-out;
+}
+
+nav div ul li a {
+  color: #f5f5f5;
+  font-size: 1.25rem;
+}
+
+nav div ul li {
+  display: block;
+  margin: 1.5rem;
+}
+
+nav div ul .untoggle-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+} 
+
+.toggle-img {
+  width: 40px;
+  height: 40px;
+}
+
+.untoggle-img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile-Home Styles */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.4);
+  margin: 0 2rem;
+}
+
+.home h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.home h1 {
+  line-height: 5.4rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.home p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #2996a0;
+  padding: 0.5rem;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.home button a {
+  color: #f5f5f5;
+}
+
+.home button:hover {
+  background-color: #2e565f;
+}
+
+/* Mobile-About Styles */
+
+.about-container {
+  margin: 0 2rem;
+}
+
+.about-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.about-links-container {
+  display: flex;
+}
+
+.tab-titles {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tab-links {
+  margin-right: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #2f7580;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents h3,
+.tab-contents p {
+  margin: 0.5rem 0;
+}
+
+.tab-contents h3 {
+  color: #2f7580;
+  font-weight: 500;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* Mobile-Projects Styles */
+.projects-container {
+  margin: 0 2rem;
+}
+
+.projects-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-img-container {
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.projects-img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(189, 255, 255, 0.3) 100%
+  );
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.projects-img {
+  display: block;
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.projects-btn {
+  text-align: center;
+}
+
+.projects-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+}
+
+.links-img {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 6px;
+}
+
+.projects-description h3 {
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.projects-description p {
+  font-size: 1rem;
+  color: #0e0e0ee5;
+}
+
+.projects-btn button {
+  border: 0.35rem solid #2e565f;
+  border-radius: 2px;
+  padding: 0 1rem;
+  color: #2e565f;
+  font-weight: bold;
+}
+
+/* Mobile-Contact Styles */
+.email-container {
+  display: none;
+}
+
+.contact-container {
+  margin: 0 2rem;
+}
+
+.contact-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.contact-images img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact-images-container {
+  display: flex;
+  margin: 2rem auto;
+}
+
+.contact-images {
+  margin: 0 auto;
+}
+
+/* Mobile-Footer Styles */
+
+.footer-container {
+  position: relative;
+  top: 37.5vh;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text p {
+  color: #f5f5f55f;
+}
+
+.footer-images-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-images img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-images {
+  filter: invert(0.5);
+  margin: 0 0.5rem;
+}
+
+/* Responsive */
+@media only screen and (min-width: 500px) {
+  /* General Styles */
+  /* Mobile-Navbar Styles */
+  /* Mobile-Home Styles */
+  /* Mobile-About Styles */
+  /* Mobile-Projects Styles */
+  .projects-img-container,
+  .projects-img {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .links-img {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 6px;
+  }
+  /* Mobile-Contact Styles */
+
+  /* Mobile-Footer Styles */
+}
+
+@media only screen and (min-width: 800px) {
+  /* General Styles */
+  .home-container,
+  .about-container,
+  .projects-container,
+  .contact-container {
+    margin: 0 5rem;
+    padding-top: 1.2rem;
+  }
+
+  /* Mobile-Navbar Styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  
+
+  .tg-button-container, .untoggle-button {
+    display: none;
+  }
+  
+
+  nav div ul {
+    background: none;
+    display: flex;
+    align-items: center;
+    top: 1rem;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    transition: none;
+  }
+  
+  nav div ul li a {
+    color: #0e0e0e;
+    margin: 0 1rem;
+  }
+  
+  nav div ul li {
+    margin: 0;
+  }
+  /* Mobile-Home Styles */
+  /* Mobile-About Styles */
+  .about-title h2 {
+    font-size: 3.5rem;
+  }
+
+  .about-title p {
+    font-size: 1.2rem;
+  }
+
+  .tab-titles p {
+    font-size: 1.2rem;
+  }
+
+  .tab-contents h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Mobile-Projects Styles */
+  .projects-title h2 {
+    font-size: 3.5rem;
+  }
+
+  .projects-description h3 {
+    font-size: 2.5rem;
+  }
+
+  .links-img {
+    width: 4vw;
+    height: 4vw;
+  }
+  /* Mobile-Contact Styles */
+
+  .email-container {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 20rem;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .email {
+    justify-content: center;
+  }
+
+  .email form label,
+  .email form input,
+  .email form textarea {
+    min-width: 14rem;
+    max-width: 14rem;
+    display: flex;
+    margin: 0.5rem 0;
+  }
+
+  .email form textarea {
+    max-height: 20rem;
+  }
+
+  .contact-title h2 {
+    font-size: 3.5rem;
+  }
+  .contact-title p {
+    font-size: 1.2rem;
+  }
+
+  
+
+  /* Mobile-Footer Styles */
+}
+
+@media only screen and (min-width: 1100px) {
+  /* General Styles */
+  .home-container,
+  .about-container,
+  .projects-container,
+  .contact-container {
+    margin: 0 6rem;
+    padding-top: 1.2rem;
+  }
+  /* Mobile-Navbar Styles */
+  /* Mobile-Home Styles */
+  /* Mobile-About Styles */
+  /* Mobile-Projects Styles */
+  .all-projects {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects-description h3 {
+    font-size: 2.5rem;
+  }
+
+  .projects-img-container {
+    width: 100%;
+    height: 18rem;
+    margin-right: 1rem;
+  }
+
+  .projects-links {
+    font-size: 4vw;
+  }
+
+  .links-img {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  /* .projects-img-container::before,
+  .projects-description,
+  .links-img {
+  } */
+
+  /* Mobile-Contact Styles */
+  /* Mobile-Footer Styles */
+}
+
+@media only screen and (min-width: 1500px) {
+/* General Styles */
+.home-container,
+.about-container,
+.projects-container,
+.contact-container {
+  margin: 0 12rem;
+  padding-top: 1.2rem;
+}
+/* Mobile-Navbar Styles */
+/* Mobile-Home Styles */
+/* Mobile-About Styles */
+.about-title h2 {
+  font-size: 3.5rem;
+}
+
+.about-title p {
+  font-size: 1.2rem;
+}
+/* Mobile-Projects Styles */
+.projects-title h2 {
+  font-size: 3.5rem;
+}
+
+.projects-description h3 {
+  font-size: 2rem;
+}
+
+.links-img {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+/* Mobile-Contact Styles */
+.contact-title h2 {
+  font-size: 3.5rem;
+}
+.contact-title p {
+  font-size: 1.5rem;
+}
+/* Mobile-Footer Styles */
+}
+
+/* General Styles */
+/* Mobile-Navbar Styles */
+/* Mobile-Home Styles */
+/* Mobile-About Styles */
+/* Mobile-Projects Styles */
+/* Mobile-Contact Styles */
+/* Mobile-Footer Styles */
