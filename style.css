@@ -652,6 +652,35 @@ footer {
 /* Screen-Footer Styles */
 }
 
+@media only screen and (max-width: 310px) {
+  .home h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  
+  .home h1 {
+    line-height: 4.2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .home p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #2996a0;
+    padding: 0.5rem;
+    border-radius: 3px;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+
 /* General Styles */
 /* Screen-Navbar Styles */
 /* Screen-Home Styles */
