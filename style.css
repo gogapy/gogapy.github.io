@@ -80,11 +80,6 @@ article {
   min-height: 50vh;
 }
 
-footer {
-  min-height: 47vh;
-  background-color: #0e0e0e;
-}
-
 /* Mobile-Navbar Styles */
 .navbar-container {
   right: 0;
@@ -385,6 +380,13 @@ nav div ul .untoggle-button {
 
 /* Mobile-Footer Styles */
 
+footer {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+
 .footer-container {
   position: relative;
   top: 37.5vh;
@@ -397,6 +399,7 @@ nav div ul .untoggle-button {
 
 .footer-text p {
   color: #f5f5f55f;
+  text-align: center;
 }
 
 .footer-images-container {
@@ -417,10 +420,10 @@ nav div ul .untoggle-button {
 /* Responsive */
 @media only screen and (min-width: 500px) {
   /* General Styles */
-  /* Mobile-Navbar Styles */
-  /* Mobile-Home Styles */
-  /* Mobile-About Styles */
-  /* Mobile-Projects Styles */
+  /* Screen-Navbar Styles */
+  /* Screen-Home Styles */
+  /* Screen-About Styles */
+  /* Screen-Projects Styles */
   .projects-img-container,
   .projects-img {
     width: 100%;
@@ -432,9 +435,9 @@ nav div ul .untoggle-button {
     height: 5vw;
     margin-left: 6px;
   }
-  /* Mobile-Contact Styles */
+  /* Screen-Contact Styles */
 
-  /* Mobile-Footer Styles */
+  /* Screen-Footer Styles */
 }
 
 @media only screen and (min-width: 800px) {
@@ -447,7 +450,7 @@ nav div ul .untoggle-button {
     padding-top: 1.2rem;
   }
 
-  /* Mobile-Navbar Styles */
+  /* Screen-Navbar Styles */
   .navbar {
     display: flex;
     align-items: center;
@@ -482,8 +485,8 @@ nav div ul .untoggle-button {
   nav div ul li {
     margin: 0;
   }
-  /* Mobile-Home Styles */
-  /* Mobile-About Styles */
+  /* Screen-Home Styles */
+  /* Screen-About Styles */
   .about-title h2 {
     font-size: 3.5rem;
   }
@@ -500,7 +503,7 @@ nav div ul .untoggle-button {
     font-size: 1.2rem;
   }
   
-  /* Mobile-Projects Styles */
+  /* Screen-Projects Styles */
   .projects-title h2 {
     font-size: 3.5rem;
   }
@@ -513,7 +516,7 @@ nav div ul .untoggle-button {
     width: 4vw;
     height: 4vw;
   }
-  /* Mobile-Contact Styles */
+  /* Screen-Contact Styles */
 
   .email-container {
     display: flex;
@@ -558,7 +561,7 @@ nav div ul .untoggle-button {
 
   
 
-  /* Mobile-Footer Styles */
+  /* Screen-Footer Styles */
 }
 
 @media only screen and (min-width: 1100px) {
@@ -570,10 +573,10 @@ nav div ul .untoggle-button {
     margin: 0 6rem;
     padding-top: 1.2rem;
   }
-  /* Mobile-Navbar Styles */
-  /* Mobile-Home Styles */
-  /* Mobile-About Styles */
-  /* Mobile-Projects Styles */
+  /* Screen-Navbar Styles */
+  /* Screen-Home Styles */
+  /* Screen-About Styles */
+  /* Screen-Projects Styles */
   .all-projects {
     display: flex;
     flex-direction: row;
@@ -603,8 +606,8 @@ nav div ul .untoggle-button {
   .links-img {
   } */
 
-  /* Mobile-Contact Styles */
-  /* Mobile-Footer Styles */
+  /* Screen-Contact Styles */
+  /* Screen-Footer Styles */
 }
 
 @media only screen and (min-width: 1500px) {
@@ -616,9 +619,9 @@ nav div ul .untoggle-button {
   margin: 0 12rem;
   padding-top: 1.2rem;
 }
-/* Mobile-Navbar Styles */
-/* Mobile-Home Styles */
-/* Mobile-About Styles */
+/* Screen-Navbar Styles */
+/* Screen-Home Styles */
+/* Screen-About Styles */
 .about-title h2 {
   font-size: 3.5rem;
 }
@@ -626,7 +629,7 @@ nav div ul .untoggle-button {
 .about-title p {
   font-size: 1.2rem;
 }
-/* Mobile-Projects Styles */
+/* Screen-Projects Styles */
 .projects-title h2 {
   font-size: 3.5rem;
 }
@@ -639,20 +642,20 @@ nav div ul .untoggle-button {
   width: 2.5vw;
   height: 2.5vw;
 }
-/* Mobile-Contact Styles */
+/* Screen-Contact Styles */
 .contact-title h2 {
   font-size: 3.5rem;
 }
 .contact-title p {
   font-size: 1.5rem;
 }
-/* Mobile-Footer Styles */
+/* Screen-Footer Styles */
 }
 
 /* General Styles */
-/* Mobile-Navbar Styles */
-/* Mobile-Home Styles */
-/* Mobile-About Styles */
-/* Mobile-Projects Styles */
-/* Mobile-Contact Styles */
-/* Mobile-Footer Styles */
+/* Screen-Navbar Styles */
+/* Screen-Home Styles */
+/* Screen-About Styles */
+/* Screen-Projects Styles */
+/* Screen-Contact Styles */
+/* Screen-Footer Styles */
