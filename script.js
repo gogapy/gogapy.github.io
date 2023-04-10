@@ -24,3 +24,21 @@ const openTab = (tabName) => {
   event.currentTarget.classList.add("active-link");
   d.getElementById(tabName).classList.add("active-tab");
 };
+
+// darkmode
+
+const body = document.body;
+let $lightmodeContainer = d.querySelector(".lightmode-container"),
+$darkmodeContainer = d.querySelector(".darkmode-container");
+
+$darkmodeContainer.addEventListener("click", (e) => {
+  $lightmodeContainer.style.left = ".4rem";
+  $darkmodeContainer.style.left = "-10rem";
+  body.classList.add("darkmode-active")
+});
+
+$lightmodeContainer.addEventListener("click", () => {
+  $lightmodeContainer.style.left = "-10rem";
+  $darkmodeContainer.style.left = ".4rem";
+  body.classList.remove("darkmode-active")
+});

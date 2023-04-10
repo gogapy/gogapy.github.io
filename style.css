@@ -106,7 +106,7 @@ article {
   margin: 0.4rem;
 }
 
-.darkmode-container {
+.color-container {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -114,9 +114,18 @@ article {
 }
 
 .darkmode-img,
-.darkmode-button {
+.lightmode-img {
   width: 32px;
   height: 32px;
+}
+
+.darkmode-container {
+  position: fixed;
+}
+
+.lightmode-container {
+  position: fixed;
+  left: -100px;
 }
 
 nav div ul {
@@ -145,7 +154,7 @@ nav div ul .untoggle-button {
   top: 1.5rem;
   left: 1.5rem;
   cursor: pointer;
-} 
+}
 
 .toggle-img {
   width: 40px;
@@ -386,7 +395,6 @@ footer {
   background-color: #0e0e0e;
 }
 
-
 .footer-container {
   position: relative;
   top: 37.5vh;
@@ -457,12 +465,11 @@ footer {
     justify-content: space-between;
     height: 4rem;
   }
-  
 
-  .tg-button-container, .untoggle-button {
+  .tg-button-container,
+  .untoggle-button {
     display: none;
   }
-  
 
   nav div ul {
     background: none;
@@ -476,12 +483,12 @@ footer {
     margin: 0;
     transition: none;
   }
-  
+
   nav div ul li a {
     color: #0e0e0e;
     margin: 0 1rem;
   }
-  
+
   nav div ul li {
     margin: 0;
   }
@@ -502,7 +509,7 @@ footer {
   .tab-contents h3 {
     font-size: 1.2rem;
   }
-  
+
   /* Screen-Projects Styles */
   .projects-title h2 {
     font-size: 3.5rem;
@@ -559,8 +566,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  
-
   /* Screen-Footer Styles */
 }
 
@@ -611,45 +616,45 @@ footer {
 }
 
 @media only screen and (min-width: 1500px) {
-/* General Styles */
-.home-container,
-.about-container,
-.projects-container,
-.contact-container {
-  margin: 0 12rem;
-  padding-top: 1.2rem;
-}
-/* Screen-Navbar Styles */
-/* Screen-Home Styles */
-/* Screen-About Styles */
-.about-title h2 {
-  font-size: 3.5rem;
-}
+  /* General Styles */
+  .home-container,
+  .about-container,
+  .projects-container,
+  .contact-container {
+    margin: 0 12rem;
+    padding-top: 1.2rem;
+  }
+  /* Screen-Navbar Styles */
+  /* Screen-Home Styles */
+  /* Screen-About Styles */
+  .about-title h2 {
+    font-size: 3.5rem;
+  }
 
-.about-title p {
-  font-size: 1.2rem;
-}
-/* Screen-Projects Styles */
-.projects-title h2 {
-  font-size: 3.5rem;
-}
+  .about-title p {
+    font-size: 1.2rem;
+  }
+  /* Screen-Projects Styles */
+  .projects-title h2 {
+    font-size: 3.5rem;
+  }
 
-.projects-description h3 {
-  font-size: 2rem;
-}
+  .projects-description h3 {
+    font-size: 2rem;
+  }
 
-.links-img {
-  width: 2.5vw;
-  height: 2.5vw;
-}
-/* Screen-Contact Styles */
-.contact-title h2 {
-  font-size: 3.5rem;
-}
-.contact-title p {
-  font-size: 1.5rem;
-}
-/* Screen-Footer Styles */
+  .links-img {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  /* Screen-Contact Styles */
+  .contact-title h2 {
+    font-size: 3.5rem;
+  }
+  .contact-title p {
+    font-size: 1.5rem;
+  }
+  /* Screen-Footer Styles */
 }
 
 @media only screen and (max-width: 310px) {
@@ -657,20 +662,20 @@ footer {
     font-size: 3.5rem;
     line-height: 4rem;
   }
-  
+
   .home h1 {
     line-height: 4.2rem;
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
   }
-  
+
   .home p {
     line-height: 2rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .home button {
     font-size: 1.5rem;
     font-weight: bold;
@@ -688,3 +693,10 @@ footer {
 /* Screen-Projects Styles */
 /* Screen-Contact Styles */
 /* Screen-Footer Styles */
+
+/* Darkmode */
+
+.darkmode-active main {
+  color: #000000;
+  background: #f5f5f5;
+}
