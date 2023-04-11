@@ -24,6 +24,7 @@ body {
   color: #000000;
   background: #f5f5f5;
   height: 100vh;
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
@@ -87,6 +88,7 @@ article {
   background-color: #f5f5f5;
   z-index: 999;
   position: fixed;
+  transition: all 0.2s ease-in-out;
 }
 
 .container-buttons {
@@ -110,7 +112,8 @@ article {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin: 0.4rem;
+  margin: 0.5rem;
+  width: 32px;
 }
 
 .darkmode-img,
@@ -121,11 +124,13 @@ article {
 
 .darkmode-container {
   position: fixed;
+  transition: all 0.2s ease-in-out;
 }
 
 .lightmode-container {
   position: fixed;
-  left: -100px;
+  left: -2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 nav div ul {
@@ -164,6 +169,7 @@ nav div ul .untoggle-button {
 .untoggle-img {
   width: 20px;
   height: 20px;
+  filter: invert(1);
 }
 
 /* Mobile-Home Styles */
@@ -210,7 +216,6 @@ nav div ul .untoggle-button {
 }
 
 /* Mobile-About Styles */
-
 .about-container {
   margin: 0 2rem;
 }
@@ -385,6 +390,10 @@ nav div ul .untoggle-button {
 
 .contact-images {
   margin: 0 auto;
+}
+
+.contact-dm {
+  transition: all 0.5s ease-in-out;
 }
 
 /* Mobile-Footer Styles */
@@ -694,9 +703,29 @@ footer {
 /* Screen-Contact Styles */
 /* Screen-Footer Styles */
 
-/* Darkmode */
+/* General-Darkmode */
+.darkmode-active {
+  background-color: #2f2f2f;
 
-.darkmode-active main {
-  color: #000000;
-  background: #f5f5f5;
+}
+.darkmode-active .home-article,
+.darkmode-active .about-article,
+.darkmode-active .projects-title,
+.darkmode-active .contact-article {
+  color: #f5f5f5;
+}
+
+/* Navbar-Darkmode */
+.darkmode-active header .navbar-container {
+  background-color: #2f2f2f;
+}
+
+.darkmode-active .tg-button-container {
+  filter: invert(1);
+}
+
+/* Contact-Darkmode */
+
+.darkmode-active .contact-dm {
+  filter: invert(1);
 }

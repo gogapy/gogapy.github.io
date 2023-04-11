@@ -32,13 +32,13 @@ let $lightmodeContainer = d.querySelector(".lightmode-container"),
 $darkmodeContainer = d.querySelector(".darkmode-container");
 
 $darkmodeContainer.addEventListener("click", (e) => {
-  $lightmodeContainer.style.left = ".4rem";
-  $darkmodeContainer.style.left = "-10rem";
+  $lightmodeContainer.style.left = ".5rem";
+  $darkmodeContainer.style.left = "-2rem";
   body.classList.add("darkmode-active")
 });
 
 $lightmodeContainer.addEventListener("click", () => {
-  $lightmodeContainer.style.left = "-10rem";
-  $darkmodeContainer.style.left = ".4rem";
+  $lightmodeContainer.style.left = "-2rem";
+  $darkmodeContainer.style.left = ".5rem";
   body.classList.remove("darkmode-active")
 });
