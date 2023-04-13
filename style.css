@@ -542,6 +542,7 @@ footer {
     width: 20rem;
     justify-self: center;
     justify-content: center;
+    transition: all 0.5s ease-in-out;
   }
 
   .form-container {
@@ -706,6 +707,7 @@ footer {
 /* General-Darkmode */
 .darkmode-active {
   background-color: #292929;
+  text-shadow: 1.5px 1.5px 2px rgba(155, 155, 155, 0.4);
 
 }
 .darkmode-active .home-article,
@@ -736,4 +738,13 @@ footer {
 
 .darkmode-active .email-container {
   background-color: #2f2f2f;
+}
+
+.darkmode-active .tab-contents h3 {
+  color: #0abfdb;
+}
+
+.darkmode-active article h2, .darkmode-active h1, .darkmode-active p {
+  text-shadow: 1.5px 1.5px 2px rgba(255, 255, 255, 0.4);
+
 }
