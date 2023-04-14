@@ -202,7 +202,7 @@ nav div ul .untoggle-button {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #2996a0;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
   transition: background-color 0.5s ease-in-out;
 }
@@ -327,6 +327,7 @@ nav div ul .untoggle-button {
 }
 
 .projects-btn {
+  display: none;
   text-align: center;
 }
 
@@ -745,6 +746,10 @@ footer {
 }
 
 .darkmode-active article h2, .darkmode-active h1, .darkmode-active p {
-  text-shadow: 1.5px 1.5px 2px rgba(255, 255, 255, 0.4);
+  text-shadow: 1.5px 1.5px 2px rgba(155, 155, 155, 0.4);
 
+}
+
+.darkmode-active .footer-text p {
+  text-shadow: none;
 }
