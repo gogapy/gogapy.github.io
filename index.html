@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Joaquín Ogallar • Web Developer</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar-container">
+      <nav>
+        <div class="navbar">
+          <div class="container-buttons">
+            <div class="color-container">
+              <div class="lightmode-container">
+                <button class="lightmode-button">
+                  <img class="lightmode-img" src="images/brightness-light.png" alt="" />
+                </button>
+              </div>
+              <div class="darkmode-container">
+                <button class="darkmode-button">
+                  <img class="darkmode-img" src="images/night-mode.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="tg-button-container">
+              <button class="toggle-button">
+                <img class="toggle-img" src="images/menu.png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="navbar-links">
+            <ul id="side-menu">
+              <button class="untoggle-button">
+                <img class="untoggle-img" src="images/x.png" alt="" />
+              </button>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#skills">Skills</a></li> -->
+              <li><a href="#projects"> Projects</a></li>
+              <li><a href="#contact"> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <article id="home" class="home-article">
+      <div class="home-container">
+        <div class="home">
+          <h2>Hi, I'm</h2>
+          <h1>Joaquin Ogallar</h1>
+          <p>Full Stack Developer</p>
+          <button>
+            <a href="">Download CV</a>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- About -->
+    <article id="about" class="about-article inpair-article">
+      <div class="about-container">
+        <div class="about-title">
+          <h2>About Me</h2>
+          <p>
+            I'm a student from Argentina. I'm really passionate about the
+            world of technology. Ever since I was a child, I've been
+            fascinated by computers, video games, and gadgets. As I grew up,
+            my interest in technology only grew stronger, and I started
+            learning programming languages and experimenting with different
+            software tools.
+          </p>
+        </div>
+        <div class="info-about-container">
+          <div class="tab-container">
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents" id="education">
+              <div>
+                <h3>2021</h3>
+                <p>I have my secondary degree</p>
+              </div>
+              <div>
+                <h3>In Progress</h3>
+                <p>Fullstack Developer Title</p>
+              </div>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <div>
+                <h3>Music</h3>
+                <p>My biggest hobby is music, I play bass and I'm also a DJ</p>
+              </div>
+              <div>
+                <h3>Gastronomy</h3>
+                <p>
+                  Another of my hobbies is cooking, it is an activity that I
+                  have enjoyed since I was a child.
+                </p>
+              </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <div>
+                <h3>Frontend</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Backend</h3>
+                <ul>
+                  <li>PHP</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Database</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Projects -->
+    <article id="projects" class="projects-article">
+      <div class="projects-container">
+        <div class="projects-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="all-projects">
+          <div class="projects-img-container">
+            <img class="projects-img" src="images/bonavista.png" alt="" />
+            <div class="projects-links">
+              <div class="projects-description">
+                <h3>Bona Vista</h3>
+                <p>Geriatrico Mar del Plata</p>
+              </div>
+              <div>
+                <a href="https://hogarbonavista.com/" target="_blank"><img class="links-img" src="images/enlace.png" alt="" /></a>
+                <a href="" target="_blank"><img class="links-img"
+                    src="images/github.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-img-container">
+            <img class="projects-img" src="./images/ListaCompras.png" alt="" />
+            <div class="projects-links">
+              <div class="projects-description">
+                <h3>Compras</h3>
+                <p>Lista de compras</p>
+              </div>
+              <div>
+                <a href="https://subtle-ganache-b6fbea.netlify.app/" target="_blank"><img class="links-img"
+                    src="images/enlace.png" alt="" /></a>
+                <a href="https://github.com/gogapy/Market-List" target="_blank"><img class="links-img"
+                    src="images/github.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          
+        <div class="projects-btn">
+          <button>See More</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Contact -->
+    <article id="contact" class="contact-article inpair-article">
+      <div class="contact-container">
+        <div class="contact-title">
+          <h2>Contact</h2>
+          <p>
+            I'm glad you made it here. In this space, I've shared my
+            experiences, thoughts, and passions with you. If you have any
+            questions or would like to get in touch, feel free to follow me on
+            my social media.
+          </p>
+        </div>
+
+        <!-- <div class="form-container">
+            <div class="email-container" data-aos="fade-left">
+              <div class="email">
+                <h3 class="send">Send me a message 🚀</h3>
+                <form>
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Full name"
+                    required
+                  />
+                  <label for="email"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <label for="subject"></label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                  <label for="message">
+                    <b class="negrita"
+                      >Tell me more about your project</b
+                    ></label
+                  >
+                  <textarea id="message" name="message" required></textarea>
+                  <input type="submit" value="Send message" class="send1" />
+                </form>
+              </div>
+            </div>
+          </div> -->
+
+        <div class="contact-images-container">
+          <div class="contact-images contact-dm">
+            <a href="https://www.instagram.com/joaquinogallar/" target="_blank">
+              <img src="images/instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="contact-images contact-dm">
+            <a href="https://www.facebook.com/profile.php?id=100081819943259" target="_blank">
+              <img src="images/facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="contact-images contact-dm">
+            <a href="https://github.com/gogapy" target="_blank">
+              <img src="images/github.png" alt="" />
+            </a>
+          </div>
+          <div class="contact-images">
+            <a href="mailto:joaquinnogallar@gmail.com" target="_blank">
+              <img src="images/gmail.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-images-container">
+        <div class="footer-images">
+          <a href="https://www.instagram.com/joaquinogallar/" target="_blank"><img src="images/instagram.png"
+              alt="" /></a>
+        </div>
+        <div class="footer-images">
+          <a href="https://www.facebook.com/profile.php?id=100081819943259" target="_blank"><img
+              src="images/facebook.png" alt="" /></a>
+        </div>
+        <div class="footer-images">
+          <a href="https://github.com/gogapy" target="_blank"><img src="images/github.png" alt="" /></a>
+        </div>
+        <!-- <div class="footer-images">
+            <a
+              href="https://www.youtube.com/channel/UC4WXYMUPHZNSFyPXGn6Yo1A"
+              target="_blank"
+              ><img src="images/youtube.png" alt=""
+            /></a>
+          </div> -->
+        <div class="footer-images">
+          <a href="https://twitter.com/JoaquinOgallar4" target="_blank"><img src="images/twitter.png" alt="" /></a>
+        </div>
+        <div class="footer-images">
+          <a href="https://www.linkedin.com/in/joaquin-ogallar-a90b2424b/" target="_blank"><img
+              src="images/logotipo-de-linkedin.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="footer-text">
+        <p>©Copyright 2023. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/dd0d215cd0.js" crossorigin="anonymous"></script>
+  <script src="./script/dark_mode.js"></script>
+  <script src="./script/toggle_menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</body>
+
+</html>
